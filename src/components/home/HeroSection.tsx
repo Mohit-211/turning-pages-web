@@ -71,9 +71,15 @@ export default function HeroSection() {
                 </Link>
               </Button>
 
-              <Button asChild variant="heroOutline" size="xl">
-                <Link href="/login">Log In</Link>
-              </Button>
+           <Button asChild variant="heroOutline" size="xl">
+  <a
+    href="https://app.turningpages.io/login"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Log In
+  </a>
+</Button>
             </motion.div>
 
             {/* Stats */}
