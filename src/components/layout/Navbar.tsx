@@ -1,31 +1,38 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
-import { BookOpen, Menu, X } from "lucide-react";
+"use client";
 
-const Navbar = () => {
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
+
+import { motion } from "framer-motion";
+import { Button } from "@/components/ui/button";
+import { Menu, X } from "lucide-react";
+
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Features", href: "/features" },
+  { name: "Support", href: "/support" },
+];
+
+export default function Navbar() {
+  const pathname = usePathname();
+
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const location = useLocation();
+
+  /* ---------------- SCROLL EFFECT ---------------- */
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: "Home", href: "/" },
-    { name: "Features", href: "/features" },
-    { name: "Support", href: "/support" },
-  ];
-
-  const closeMobileMenu = () => {
-    setIsMobileMenuOpen(false);
-  };
+  const closeMobileMenu = () => setIsMobileMenuOpen(false);
 
   return (
     <motion.nav
@@ -38,16 +45,17 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-4">
+      <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-primary-gradient flex items-center justify-center shadow-cta">
-              <BookOpen className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="text-xl font-display font-bold text-foreground">
-              Turning Pages
-            </span>
+          <Link href="/" className="flex items-center gap-2 group">
+            <Image
+              src="/logo.png"
+              alt="Turning Pages Logo"
+              width={100}
+              height={80}
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -56,9 +64,9 @@ const Navbar = () => {
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <Link
-                    to={link.href}
+                    href={link.href}
                     className={`font-medium transition-colors ${
-                      location.pathname === link.href
+                      pathname === link.href
                         ? "text-foreground"
                         : "text-muted-foreground hover:text-foreground"
                     }`}
@@ -70,21 +78,21 @@ const Navbar = () => {
             </ul>
 
             <div className="flex items-center gap-3">
-              <Button variant="hero" size="default">
-                Try Now
-              </Button>
-              <Button variant="heroOutline" size="default">
-                Log In
-              </Button>
+              <Button variant="hero">Try Now</Button>
+              <Button variant="heroOutline">Log In</Button>
             </div>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             className="md:hidden text-foreground"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={() => setIsMobileMenuOpen((prev) => !prev)}
           >
-            {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
           </button>
         </div>
 
@@ -93,14 +101,13 @@ const Navbar = () => {
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
             className="md:hidden pt-6 pb-4"
           >
             <ul className="flex flex-col gap-4 mb-6">
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <Link
-                    to={link.href}
+                    href={link.href}
                     onClick={closeMobileMenu}
                     className="text-muted-foreground hover:text-foreground font-medium transition-colors block py-2"
                   >
@@ -109,11 +116,12 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
+
             <div className="flex flex-col gap-3">
-              <Button variant="hero" size="lg" className="w-full">
+              <Button className="w-full" size="lg">
                 Try Now
               </Button>
-              <Button variant="heroOutline" size="lg" className="w-full">
+              <Button variant="heroOutline" className="w-full" size="lg">
                 Log In
               </Button>
             </div>
@@ -122,6 +130,4 @@ const Navbar = () => {
       </div>
     </motion.nav>
   );
-};
-
-export default Navbar;
+}

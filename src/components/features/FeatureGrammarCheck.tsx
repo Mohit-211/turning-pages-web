@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { CheckCircle2, AlertCircle, Sparkles } from "lucide-react";
 
@@ -6,7 +8,7 @@ const FeatureGrammarCheck = () => {
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left: Content */}
+          {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -15,35 +17,41 @@ const FeatureGrammarCheck = () => {
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
               <CheckCircle2 className="w-4 h-4" />
-              <span className="text-sm font-semibold">Grammar & Spell Check</span>
+              <span className="text-sm font-semibold">
+                Grammar & Spell Check
+              </span>
             </div>
+
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
               Write with Confidence,{" "}
               <span className="text-gradient-brand">Error-Free</span>
             </h2>
+
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our built-in AI-lite editor highlights typos, punctuation issues, 
-              and minor language problems in real time. Accept or ignore suggestions 
-              instantly as you write, keeping your flow uninterrupted while 
-              maintaining polished prose.
+              Our built-in AI-lite editor highlights typos, punctuation issues,
+              and minor language problems in real time. Accept or ignore
+              suggestions instantly as you write, keeping your flow
+              uninterrupted while maintaining polished prose.
             </p>
+
             <div className="flex flex-wrap gap-4">
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Real-time corrections</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>One-click accept</span>
-              </div>
-              <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                <CheckCircle2 className="w-4 h-4 text-green-600" />
-                <span>Non-intrusive UI</span>
-              </div>
+              {[
+                "Real-time corrections",
+                "One-click accept",
+                "Non-intrusive UI",
+              ].map((text) => (
+                <div
+                  key={text}
+                  className="flex items-center gap-2 text-sm text-muted-foreground"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-green-600" />
+                  <span>{text}</span>
+                </div>
+              ))}
             </div>
           </motion.div>
 
-          {/* Right: Visual */}
+          {/* Visual */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -52,7 +60,7 @@ const FeatureGrammarCheck = () => {
             className="relative"
           >
             <div className="bg-card rounded-2xl shadow-card p-8 border border-border">
-              {/* Mock text editor */}
+              {/* Editor */}
               <div className="space-y-4">
                 <p className="text-foreground leading-relaxed">
                   The morning sun casted a golden glow over the{" "}
@@ -73,11 +81,12 @@ const FeatureGrammarCheck = () => {
                       melodies
                     </span>
                   </span>{" "}
-                  from ancient oaks while the baker prepared fresh bread for the 
+                  from ancient oaks while the baker prepared fresh bread for the
                   day ahead.
                 </p>
               </div>
-              {/* Correction panel */}
+
+              {/* Footer */}
               <div className="mt-6 pt-6 border-t border-border">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
@@ -86,6 +95,7 @@ const FeatureGrammarCheck = () => {
                       2 suggestions found
                     </span>
                   </div>
+
                   <button className="flex items-center gap-2 text-sm font-medium text-primary hover:underline">
                     <Sparkles className="w-4 h-4" />
                     Fix all
@@ -93,7 +103,7 @@ const FeatureGrammarCheck = () => {
                 </div>
               </div>
             </div>
-            {/* Decorative */}
+
             <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-secondary/5 rounded-2xl -z-10" />
           </motion.div>
         </div>

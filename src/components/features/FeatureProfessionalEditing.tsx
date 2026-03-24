@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { Pencil, Shield, Award, Users } from "lucide-react";
 
@@ -5,7 +7,8 @@ const FeatureProfessionalEditing = () => {
   const services = [
     {
       title: "Developmental Editing",
-      description: "Big-picture feedback on structure, pacing, and narrative arc",
+      description:
+        "Big-picture feedback on structure, pacing, and narrative arc",
     },
     {
       title: "Line Editing",
@@ -21,7 +24,8 @@ const FeatureProfessionalEditing = () => {
     },
     {
       title: "Fact-Checking",
-      description: "Verify accuracy of historical, scientific, and factual claims",
+      description:
+        "Verify accuracy of historical, scientific, and factual claims",
     },
     {
       title: "Formatting",
@@ -31,7 +35,6 @@ const FeatureProfessionalEditing = () => {
 
   return (
     <section className="py-24 bg-cta-gradient text-primary-foreground relative overflow-hidden">
-      {/* Background pattern */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-64 h-64 border border-primary-foreground/20 rounded-full" />
         <div className="absolute bottom-20 right-20 w-96 h-96 border border-primary-foreground/20 rounded-full" />
@@ -49,14 +52,17 @@ const FeatureProfessionalEditing = () => {
             <Pencil className="w-4 h-4" />
             <span className="text-sm font-semibold">Professional Editing</span>
           </div>
+
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
             Human-Grade Editing for{" "}
             <span className="text-primary">Publishing-Ready</span> Quality
           </h2>
+
           <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
-            Submit your manuscript for comprehensive editorial services delivered 
-            by experienced editors supported by AI tools. From developmental feedback 
-            to final proofreading, we ensure your book meets professional publishing standards.
+            Submit your manuscript for comprehensive editorial services
+            delivered by experienced editors supported by AI tools. From
+            developmental feedback to final proofreading, we ensure your book
+            meets professional publishing standards.
           </p>
         </motion.div>
 
@@ -80,7 +86,6 @@ const FeatureProfessionalEditing = () => {
           ))}
         </div>
 
-        {/* Trust badges */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

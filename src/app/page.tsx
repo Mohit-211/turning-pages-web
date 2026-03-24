@@ -1,25 +1,34 @@
-import Navbar from "@/components/Navbar";
-import HeroSection from "@/components/HeroSection";
-import JourneySection from "@/components/JourneySection";
-import TestimonialsSection from "@/components/TestimonialsSection";
-import FeaturesSection from "@/components/FeaturesSection";
-import CTABanner from "@/components/CTABanner";
-import AudienceSection from "@/components/AudienceSection";
-import Footer from "@/components/Footer";
+import type { Metadata } from "next";
 
-const Index = () => {
+import HeroSection from "@/components/home/HeroSection";
+import JourneySection from "@/components/home/JourneySection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
+import FeaturesSection from "@/components/home/FeaturesSection";
+import CTABanner from "@/components/home/CTABanner";
+import AudienceSection from "@/components/home/AudienceSection";
+
+export const metadata: Metadata = {
+  title: "Turning Pages – Write Your Book with AI",
+  description:
+    "Turning Pages is an AI-powered platform that helps you write, structure, and publish your book faster and smarter.",
+  keywords: [
+    "AI writing",
+    "book writing platform",
+    "write book with AI",
+    "AI author tools",
+    "content creation",
+  ],
+};
+
+export default function HomePage() {
   return (
-    <div className="min-h-screen bg-background">
-      <Navbar />
+    <main className="min-h-screen bg-background">
       <HeroSection />
       <JourneySection />
       <TestimonialsSection />
       <FeaturesSection />
       <CTABanner />
       <AudienceSection />
-      <Footer />
-    </div>
+    </main>
   );
-};
-
-export default Index;
+}

@@ -1,8 +1,12 @@
+"use client";
+
 import { motion } from "framer-motion";
+import Link from "next/link";
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const CTABanner = () => {
+export default function CTABanner() {
   return (
     <section className="py-20 bg-cta-gradient relative overflow-hidden">
       {/* Decorative Elements */}
@@ -14,30 +18,46 @@ const CTABanner = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
+          viewport={{ once: true, margin: "-100px" }}
           className="text-center"
         >
+          {/* Headline */}
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-secondary-foreground mb-6">
             Your book deserves more than a rough draft.
           </h2>
+
+          {/* Subtext */}
           <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto mb-10">
-            Transform your manuscript into a professionally polished work with 
-            AI-powered tools and expert editorial guidance.
+            Stop rewriting. Start finishing. Turn your manuscript into a
+            polished, publish-ready book with AI-powered tools and guided
+            editing.
           </p>
 
+          {/* CTA */}
           <div className="flex flex-wrap justify-center gap-4">
-            <Button variant="ctaBanner" size="xl" className="group">
-              Start Writing Now
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <Button asChild variant="ctaBanner" size="xl" className="group">
+              <a
+                href="https://app.turningpages.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Start Writing Now
+                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+              </a>
             </Button>
-            <Button variant="ctaBannerOutline" size="xl">
-              Log In
+
+            <Button asChild variant="ctaBannerOutline" size="xl">
+              <a
+                href="https://app.turningpages.io"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Log In
+              </a>
             </Button>
           </div>
         </motion.div>
       </div>
     </section>
   );
-};
-
-export default CTABanner;
+}

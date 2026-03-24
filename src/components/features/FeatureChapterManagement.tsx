@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import { BookMarked, FolderOpen, ArrowUpDown, BarChart3 } from "lucide-react";
 
@@ -13,7 +15,7 @@ const FeatureChapterManagement = () => {
     <section className="py-24 bg-muted/30">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left: Visual */}
+          {/* Visual */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,11 +32,13 @@ const FeatureChapterManagement = () => {
                   <span>10,490 words</span>
                 </div>
               </div>
-              {/* Progress bar */}
+
+              {/* Progress */}
               <div className="h-2 bg-muted rounded-full mb-6 overflow-hidden">
                 <div className="h-full w-3/5 bg-gradient-to-r from-primary to-secondary rounded-full" />
               </div>
-              {/* Chapter list */}
+
+              {/* Chapters */}
               <div className="space-y-3">
                 {chapters.map((chapter, index) => (
                   <motion.div
@@ -51,10 +55,12 @@ const FeatureChapterManagement = () => {
                         {chapter.title}
                       </span>
                     </div>
+
                     <div className="flex items-center gap-3">
                       <span className="text-xs text-muted-foreground">
                         {chapter.words.toLocaleString()} words
                       </span>
+
                       <span
                         className={`text-xs px-2 py-1 rounded-full ${
                           chapter.status === "complete"
@@ -73,7 +79,7 @@ const FeatureChapterManagement = () => {
             </div>
           </motion.div>
 
-          {/* Right: Content */}
+          {/* Content */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -85,23 +91,26 @@ const FeatureChapterManagement = () => {
               <BookMarked className="w-4 h-4" />
               <span className="text-sm font-semibold">Chapter Management</span>
             </div>
+
             <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
               Organize Your Manuscript{" "}
               <span className="text-gradient-brand">Effortlessly</span>
             </h2>
+
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Create, reorder, save, and manage chapters with intuitive drag-and-drop 
-              controls. Upload existing manuscripts, track your progress visually 
-              in a structured dashboard, and never lose sight of your story's 
-              architecture.
+              Create, reorder, save, and manage chapters with intuitive
+              drag-and-drop controls. Upload existing manuscripts, track your
+              progress visually in a structured dashboard, and never lose sight
+              of your story's architecture.
             </p>
+
             <div className="grid sm:grid-cols-2 gap-4">
               {[
                 { icon: FolderOpen, text: "Upload existing manuscripts" },
                 { icon: ArrowUpDown, text: "Drag-and-drop reordering" },
                 { icon: BarChart3, text: "Visual progress tracking" },
                 { icon: BookMarked, text: "Chapter templates" },
-              ].map((item, index) => (
+              ].map((item) => (
                 <div
                   key={item.text}
                   className="flex items-center gap-3 p-3 bg-card rounded-lg shadow-soft"

@@ -1,17 +1,19 @@
+"use client";
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
-import { 
-  Send, 
-  MessageCircle, 
-  Clock, 
-  Users, 
+import {
+  Send,
+  MessageCircle,
+  Clock,
+  Users,
   BookOpen,
   CreditCard,
-  Settings
+  Settings,
 } from "lucide-react";
 import { toast } from "sonner";
 
@@ -24,34 +26,63 @@ const SupportForm = () => {
     message: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    toast.success("Message sent successfully! We'll get back to you within 24 hours.");
-    setFormData({ name: "", email: "", subject: "", message: "" });
+
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+
+    toast.success(
+      "Message sent successfully! We'll get back to you within 24 hours."
+    );
+
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+
     setIsSubmitting(false);
   };
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({ ...prev, [e.target.name]: e.target.value }));
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   const supportAreas = [
-    { icon: BookOpen, title: "Manuscript Help", description: "Questions about writing, uploading, or managing your work" },
-    { icon: Users, title: "Editing Services", description: "Information about professional editing submissions" },
-    { icon: CreditCard, title: "Billing & Pricing", description: "Payment questions, plans, and subscription help" },
-    { icon: Settings, title: "Technical Support", description: "Account issues, bugs, or platform assistance" },
+    {
+      icon: BookOpen,
+      title: "Manuscript Help",
+      description: "Questions about writing, uploading, or managing your work",
+    },
+    {
+      icon: Users,
+      title: "Editing Services",
+      description: "Information about professional editing submissions",
+    },
+    {
+      icon: CreditCard,
+      title: "Billing & Pricing",
+      description: "Payment questions, plans, and subscription help",
+    },
+    {
+      icon: Settings,
+      title: "Technical Support",
+      description: "Account issues, bugs, or platform assistance",
+    },
   ];
 
   return (
     <section className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16">
-          {/* Contact Form */}
+          {/* Form */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -87,6 +118,7 @@ const SupportForm = () => {
                       className="border-secondary/30 focus:border-secondary"
                     />
                   </div>
+
                   <div className="space-y-2">
                     <Label htmlFor="email">Email Address</Label>
                     <Input
@@ -157,7 +189,7 @@ const SupportForm = () => {
             </div>
           </motion.div>
 
-          {/* Reassurance Panel */}
+          {/* Side */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -166,13 +198,15 @@ const SupportForm = () => {
             className="flex flex-col justify-center"
           >
             <h3 className="text-2xl font-display font-bold text-foreground mb-4">
-              Real Human Support, <span className="text-gradient-brand">Always</span>
+              Real Human Support,{" "}
+              <span className="text-gradient-brand">Always</span>
             </h3>
+
             <p className="text-muted-foreground mb-8 leading-relaxed">
-              Turning Pages provides genuine human support for both technical and 
-              editorial questions. Our team understands the creative process and 
-              is here to help with manuscripts, editing submissions, pricing, 
-              account issues, and everything in between.
+              Turning Pages provides genuine human support for both technical
+              and editorial questions. Our team understands the creative process
+              and is here to help with manuscripts, editing submissions,
+              pricing, account issues, and everything in between.
             </p>
 
             <div className="space-y-4">
@@ -188,6 +222,7 @@ const SupportForm = () => {
                   <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
                     <area.icon className="w-5 h-5 text-primary" />
                   </div>
+
                   <div>
                     <h4 className="font-semibold text-foreground mb-1">
                       {area.title}

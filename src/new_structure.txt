@@ -1,0 +1,58 @@
+.
+├── app
+│   ├── features
+│   │   └── page.tsx
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── not-found.tsx
+│   ├── page.tsx
+│   └── support
+│       └── page.tsx
+├── components
+│   ├── features
+│   │   ├── FeatureAIWriting.tsx
+│   │   ├── FeatureChapterManagement.tsx
+│   │   ├── FeatureCoverGenerator.tsx
+│   │   ├── FeatureGrammarCheck.tsx
+│   │   ├── FeaturePlagiarism.tsx
+│   │   ├── FeatureProfessionalEditing.tsx
+│   │   ├── FeatureSummaries.tsx
+│   │   ├── FeaturesCTA.tsx
+│   │   ├── FeaturesHero.tsx
+│   │   ├── FeaturesJourney.tsx
+│   │   └── FeaturesTrust.tsx
+│   ├── home
+│   │   ├── AudienceSection.tsx
+│   │   ├── CTABanner.tsx
+│   │   ├── FeaturesSection.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── JourneySection.tsx
+│   │   └── TestimonialsSection.tsx
+│   ├── layout
+│   │   ├── Footer.tsx
+│   │   └── Navbar.tsx
+│   ├── support
+│   │   ├── SupportCTA.tsx
+│   │   ├── SupportFAQ.tsx
+│   │   ├── SupportForm.tsx
+│   │   ├── SupportHero.tsx
+│   │   └── SupportTrust.tsx
+│   └── ui
+│       ├── accordion.tsx
+│       ├── button.tsx
+│       ├── dialog.tsx
+│       ├── input.tsx
+│       ├── label.tsx
+│       ├── separator.tsx
+│       ├── sheet.tsx
+│       ├── skeleton.tsx
+│       ├── textarea.tsx
+│       ├── toggle.tsx
+│       └── tooltip.tsx
+├── hooks
+│   └── use-mobile.tsx
+├── lib
+│   └── utils.ts
+└── new_structure.tsx
+
+12 directories, 44 files
