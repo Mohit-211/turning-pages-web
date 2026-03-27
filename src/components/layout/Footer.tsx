@@ -57,7 +57,11 @@ export default function Footer() {
 
               >
 
-                <Button variant="heroOutline">Log In</Button>
+                <Button 
+                          // variant="outline"
+                className="border-background/30 text-background hover:bg-background hover:text-foreground"
+                variant="heroOutline"
+                >Log In</Button>
               </a>
             </div>
           </div>
