@@ -39,13 +39,26 @@ export default function Footer() {
             </p>
 
             <div className="flex gap-3">
-              <Button variant="hero">Try Now</Button>
-              <Button
-                variant="outline"
-                className="border-background/30 text-background hover:bg-background hover:text-foreground"
+
+
+              <a
+                href="https://app.turningpages.io/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+
               >
-                Log In
-              </Button>
+
+                <Button variant="hero">Try Now</Button>
+              </a>
+              <a
+                href="https://app.turningpages.io/login"
+                target="_blank"
+                rel="noopener noreferrer"
+
+              >
+
+                <Button variant="heroOutline">Log In</Button>
+              </a>
             </div>
           </div>
 

@@ -65,7 +65,7 @@ export default function HeroSection() {
               className="flex flex-wrap gap-4"
             >
               <Button asChild variant="hero" size="xl" className="group">
-                <Link href="/signup">
+                <Link  href="https://app.turningpages.io/signup">
                   Try Now Free
                   <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Link>

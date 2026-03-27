@@ -78,8 +78,24 @@ export default function Navbar() {
             </ul>
 
             <div className="flex items-center gap-3">
+               <a
+    href="https://app.turningpages.io/signup"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full"
+  >
+
               <Button variant="hero">Try Now</Button>
+  </a>
+   <a
+    href="https://app.turningpages.io/login"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full"
+  >
+
               <Button variant="heroOutline">Log In</Button>
+  </a>
             </div>
           </div>
 
@@ -117,14 +133,29 @@ export default function Navbar() {
               ))}
             </ul>
 
-            <div className="flex flex-col gap-3">
-              <Button className="w-full" size="lg">
-                Try Now
-              </Button>
-              <Button variant="heroOutline" className="w-full" size="lg">
-                Log In
-              </Button>
-            </div>
+           <div className="flex flex-col gap-3">
+  <a
+    href="https://app.turningpages.io/signup"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full"
+  >
+    <Button className="w-full" size="lg">
+      Try Now
+    </Button>
+  </a>
+
+  <a
+    href="https://app.turningpages.io/login"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="w-full"
+  >
+    <Button variant="heroOutline" className="w-full" size="lg">
+      Log In
+    </Button>
+  </a>
+</div>
           </motion.div>
         )}
       </div>

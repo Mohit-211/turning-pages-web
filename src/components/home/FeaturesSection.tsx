@@ -129,14 +129,14 @@ export default function FeaturesSection() {
           className="flex flex-wrap justify-center gap-4"
         >
           <Button asChild variant="hero" size="lg" className="group">
-            <Link href="/features">
+            <Link  href="https://app.turningpages.io/signup">
               Explore Features
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </Button>
 
           <Button asChild variant="secondary" size="lg">
-            <Link href="/signup">Try Now</Link>
+            <Link href="https://app.turningpages.io/login">Try Now</Link>
           </Button>
         </motion.div>
       </div>

@@ -110,7 +110,7 @@ const SupportFAQ = () => {
 
           <Button asChild variant="heroOutline" size="lg">
             <a
-              href="https://app.turningpages.io"
+              href="https://app.turningpages.io/signup"
               target="_blank"
               rel="noopener noreferrer"
             >

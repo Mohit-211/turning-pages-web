@@ -37,7 +37,8 @@ const FeaturesHero = () => {
             <div className="flex flex-wrap gap-4">
               <Button asChild variant="hero" size="lg" className="group">
                 <a
-                  href="https://app.turningpages.io"
+                               href="https://app.turningpages.io/signup"
+
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -48,7 +49,8 @@ const FeaturesHero = () => {
 
               <Button asChild variant="heroOutline" size="lg">
                 <a
-                  href="https://app.turningpages.io"
+                               href="https://app.turningpages.io/login"
+
                   target="_blank"
                   rel="noopener noreferrer"
                 >

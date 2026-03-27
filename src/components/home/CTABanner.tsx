@@ -37,7 +37,7 @@ export default function CTABanner() {
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild variant="ctaBanner" size="xl" className="group">
               <a
-                href="https://app.turningpages.io"
+                href="https://app.turningpages.io/signup"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -48,7 +48,7 @@ export default function CTABanner() {
 
             <Button asChild variant="ctaBannerOutline" size="xl">
               <a
-                href="https://app.turningpages.io"
+                href="https://app.turningpages.io/login"
                 target="_blank"
                 rel="noopener noreferrer"
               >
