@@ -12,6 +12,7 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Features", href: "/features" },
+  { name: "Credits", href: "/credits" },
   { name: "Support", href: "/support" },
 ];
 
@@ -39,11 +40,10 @@ export default function Navbar() {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-soft"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-6 py-2">
         <div className="flex items-center justify-between">
@@ -65,11 +65,10 @@ export default function Navbar() {
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className={`font-medium transition-colors ${
-                      pathname === link.href
+                    className={`font-medium transition-colors ${pathname === link.href
                         ? "text-foreground"
                         : "text-muted-foreground hover:text-foreground"
-                    }`}
+                      }`}
                   >
                     {link.name}
                   </Link>
@@ -78,24 +77,24 @@ export default function Navbar() {
             </ul>
 
             <div className="flex items-center gap-3">
-               <a
-    href="https://app.turningpages.io/signup"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-full"
-  >
+              <a
+                href="https://app.turningpages.io/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
 
-              <Button variant="hero">Try Now</Button>
-  </a>
-   <a
-    href="https://app.turningpages.io/login"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-full"
-  >
+                <Button variant="hero">Try Now</Button>
+              </a>
+              <a
+                href="https://app.turningpages.io/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
 
-              <Button variant="heroOutline">Log In</Button>
-  </a>
+                <Button variant="heroOutline">Log In</Button>
+              </a>
             </div>
           </div>
 
@@ -133,29 +132,29 @@ export default function Navbar() {
               ))}
             </ul>
 
-           <div className="flex flex-col gap-3">
-  <a
-    href="https://app.turningpages.io/signup"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-full"
-  >
-    <Button className="w-full" size="lg">
-      Try Now
-    </Button>
-  </a>
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://app.turningpages.io/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <Button className="w-full" size="lg">
+                  Try Now
+                </Button>
+              </a>
 
-  <a
-    href="https://app.turningpages.io/login"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="w-full"
-  >
-    <Button variant="heroOutline" className="w-full" size="lg">
-      Log In
-    </Button>
-  </a>
-</div>
+              <a
+                href="https://app.turningpages.io/login"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full"
+              >
+                <Button variant="heroOutline" className="w-full" size="lg">
+                  Log In
+                </Button>
+              </a>
+            </div>
           </motion.div>
         )}
       </div>
