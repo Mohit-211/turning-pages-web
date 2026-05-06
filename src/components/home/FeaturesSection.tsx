@@ -18,7 +18,7 @@ import {
 const features = [
   {
     icon: Wand2,
-    title: "AI Drafting",
+    title: "TAV Drafting",
     description:
       "Generate ideas, expand thoughts, and break through writer’s block instantly.",
   },
@@ -38,7 +38,7 @@ const features = [
     icon: Pencil,
     title: "Professional Editing",
     description:
-      "AI + editorial workflows that elevate your manuscript to publishable quality.",
+      "TAV + editorial workflows that elevate your manuscript to publishable quality.",
   },
   {
     icon: Shield,
@@ -56,7 +56,7 @@ const features = [
     icon: Image,
     title: "Cover Generation",
     description:
-      "Design beautiful, AI-powered book covers tailored to your story.",
+      "Design beautiful, TAV-powered book covers tailored to your story.",
   },
 ] as const;
 

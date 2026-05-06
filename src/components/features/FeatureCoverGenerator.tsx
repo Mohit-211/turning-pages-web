@@ -40,7 +40,7 @@ const FeatureCoverGenerator = () => {
 
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
             Create Stunning Book Covers with{" "}
-            <span className="text-gradient-brand">AI</span>
+            <span className="text-gradient-brand">TAV</span>
           </h2>
 
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">

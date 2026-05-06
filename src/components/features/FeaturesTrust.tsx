@@ -15,7 +15,7 @@ const FeaturesTrust = () => {
       icon: Eye,
       title: "Private Manuscripts",
       description:
-        "Your work is never shared, sold, or used for AI training without consent",
+        "Your work is never shared, sold, or used for TAV training without consent",
     },
     {
       icon: UserCheck,

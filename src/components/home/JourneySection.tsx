@@ -8,14 +8,14 @@ const steps = [
     icon: Lightbulb,
     title: "Spark Your Idea",
     description:
-      "Start with a thought, a theme, or even a single line. Our AI helps shape it into a clear direction.",
+      "Start with a thought, a theme, or even a single line. Our TAV helps shape it into a clear direction.",
     color: "primary",
   },
   {
     icon: FileText,
     title: "Write Your Story",
     description:
-      "Draft effortlessly with AI assistance, organize chapters, and keep momentum without writer’s block.",
+      "Draft effortlessly with TAV assistance, organize chapters, and keep momentum without writer’s block.",
     color: "secondary",
   },
   {

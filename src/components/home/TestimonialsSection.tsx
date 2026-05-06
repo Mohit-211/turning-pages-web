@@ -9,7 +9,7 @@ const testimonials = [
     role: "Fantasy Author",
     avatar: "SM",
     quote:
-      "Turning Pages saved me months of editing time. The AI suggestions felt like having a professional editor by my side 24/7.",
+      "Turning Pages saved me months of editing time. The TAV suggestions felt like having a professional editor by my side 24/7.",
     rating: 5,
   },
   {
@@ -25,7 +25,7 @@ const testimonials = [
     role: "Non-Fiction Author",
     avatar: "ER",
     quote:
-      "The chapter management and AI drafting tools transformed how I organize my thoughts. My productivity has tripled.",
+      "The chapter management and TAV drafting tools transformed how I organize my thoughts. My productivity has tripled.",
     rating: 5,
   },
 ] as const;

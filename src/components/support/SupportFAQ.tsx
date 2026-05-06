@@ -13,9 +13,9 @@ import { HelpCircle, ArrowRight } from "lucide-react";
 const SupportFAQ = () => {
   const faqs = [
     {
-      question: "How does the AI writing assistant work?",
+      question: "How does the TAV writing assist work?",
       answer:
-        "Our AI writing assistant uses advanced language models to help you generate ideas, draft content, and overcome writer's block. Simply describe what you want to write, and the AI will suggest text that matches your style and vision. You maintain full creative control—edit, refine, or regenerate until you're satisfied.",
+        "Our TAV writing assist uses advanced language models to help you generate ideas, draft content, and overcome writer's block. Simply describe what you want to write, and the TAV will suggest text that matches your style and vision. You maintain full creative control—edit, refine, or regenerate until you're satisfied.",
     },
     {
       question: "What happens after I submit a manuscript for editing?",

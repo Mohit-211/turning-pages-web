@@ -35,20 +35,20 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://turningpages.ai"),
 
   title: {
-    default: "Turning Pages – Write Your Book with AI",
+    default: "Turning Pages – Write Your Book with TAV",
     template: "%s | Turning Pages",
   },
 
   description:
-    "Turning Pages is an AI-powered platform that helps you write, structure, edit, and publish your book effortlessly.",
+    "Turning Pages is an TAV-powered platform that helps you write, structure, edit, and publish your book effortlessly.",
 
   keywords: [
-    "AI writing",
+    "TAV writing",
     "book writing platform",
-    "write book with AI",
-    "AI author tools",
+    "write book with TAV",
+    "TAV author tools",
     "self publishing",
-    "AI content creation",
+    "TAV content creation",
   ],
 
   applicationName: "Turning Pages",
@@ -68,9 +68,9 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Turning Pages – Write Your Book with AI",
+    title: "Turning Pages – Write Your Book with TAV",
     description:
-      "Create, edit, and publish your book using powerful AI tools. Faster writing, smarter storytelling.",
+      "Create, edit, and publish your book using powerful TAV tools. Faster writing, smarter storytelling.",
     url: "https://turningpages.ai",
     siteName: "Turning Pages",
     images: [
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
         url: "/assets/hero-dashboard.jpg",
         width: 1200,
         height: 630,
-        alt: "Turning Pages AI Writing Platform",
+        alt: "Turning Pages TAV Writing Platform",
       },
     ],
     locale: "en_US",
@@ -87,9 +87,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Turning Pages – Write Your Book with AI",
+    title: "Turning Pages – Write Your Book with TAV",
     description:
-      "Your AI-powered writing partner for books, ideas, and storytelling.",
+      "Your TAV-powered writing partner for books, ideas, and storytelling.",
     images: ["/assets/hero-dashboard.jpg"],
   },
 

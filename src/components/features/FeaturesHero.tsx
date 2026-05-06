@@ -28,7 +28,7 @@ const FeaturesHero = () => {
             </h1>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-xl">
-              Turning Pages blends AI-assisted creativity with
+              Turning Pages blends TAV-assisted creativity with
               professional-grade editorial workflows to help authors go from
               blank page to polished manuscript. Discover every tool at your
               fingertips.
@@ -70,7 +70,7 @@ const FeaturesHero = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-card">
               <Image
                 src="/assets/features-hero.jpg"
-                alt="Manuscript editor with AI suggestions"
+                alt="Manuscript editor with TAV suggestions"
                 width={1200}
                 height={800}
                 className="w-full h-auto"

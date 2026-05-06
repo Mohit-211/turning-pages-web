@@ -8,7 +8,7 @@ const FeatureAIWriting = () => {
     {
       icon: Lightbulb,
       title: "Generate Ideas",
-      description: "Describe your vision and let AI draft initial content",
+      description: "Describe your vision and let TAV draft initial content",
     },
     {
       icon: RefreshCw,
@@ -18,7 +18,7 @@ const FeatureAIWriting = () => {
     {
       icon: MessageSquare,
       title: "Conversational Support",
-      description: "Chat with AI to overcome blocks and refine your voice",
+      description: "Chat with TAV to overcome blocks and refine your voice",
     },
   ];
 
@@ -36,7 +36,7 @@ const FeatureAIWriting = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary mb-6">
               <Wand2 className="w-4 h-4" />
               <span className="text-sm font-semibold">
-                AI Writing Assistant
+                TAV Writing Assist
               </span>
             </div>
 
@@ -46,10 +46,10 @@ const FeatureAIWriting = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our AI writing assistant helps you generate initial drafts by
+              Our TAV writing assist helps you generate initial drafts by
               simply describing your ideas. Expand scenes, rewrite passages for
               different tones, and overcome writer's block with conversational
-              AI support that understands your creative vision.
+              TAV support that understands your creative vision.
             </p>
 
             <div className="space-y-4">

@@ -8,14 +8,14 @@ import CTABanner from "@/components/home/CTABanner";
 import AudienceSection from "@/components/home/AudienceSection";
 
 export const metadata: Metadata = {
-  title: "Turning Pages – Write Your Book with AI",
+  title: "Turning Pages – Write Your Book with TAV",
   description:
-    "Turning Pages is an AI-powered platform that helps you write, structure, and publish your book faster and smarter.",
+    "Turning Pages is an TAV-powered platform that helps you write, structure, and publish your book faster and smarter.",
   keywords: [
-    "AI writing",
+    "TAV writing",
     "book writing platform",
-    "write book with AI",
-    "AI author tools",
+    "write book with TAV",
+    "TAV author tools",
     "content creation",
   ],
 };

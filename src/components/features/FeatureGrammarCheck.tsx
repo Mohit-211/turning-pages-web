@@ -28,7 +28,7 @@ const FeatureGrammarCheck = () => {
             </h2>
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our built-in AI-lite editor highlights typos, punctuation issues,
+              Our built-in TAV-lite editor highlights typos, punctuation issues,
               and minor language problems in real time. Accept or ignore
               suggestions instantly as you write, keeping your flow
               uninterrupted while maintaining polished prose.

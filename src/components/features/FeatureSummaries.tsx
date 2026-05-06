@@ -29,7 +29,7 @@ const FeatureSummaries = () => {
 
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Generate chapter-wise summaries, mid-book recaps, and full-book
-              synopses with AI assistance. Perfect for reviewing your story's
+              synopses with TAV assistance. Perfect for reviewing your story's
               structure, preparing marketing descriptions, or creating query
               letters for agents and publishers.
             </p>

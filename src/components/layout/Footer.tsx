@@ -33,7 +33,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-background/70 max-w-md mb-6 leading-relaxed">
-              Where stories become books. Empowering writers with AI-powered
+              Where stories become books. Empowering writers with TAV-powered
               tools and professional editing to bring their literary dreams to
               life.
             </p>

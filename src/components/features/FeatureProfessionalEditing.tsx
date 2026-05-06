@@ -60,7 +60,7 @@ const FeatureProfessionalEditing = () => {
 
           <p className="text-lg text-primary-foreground/80 max-w-3xl mx-auto leading-relaxed">
             Submit your manuscript for comprehensive editorial services
-            delivered by experienced editors supported by AI tools. From
+            delivered by experienced editors supported by TAV tools. From
             developmental feedback to final proofreading, we ensure your book
             meets professional publishing standards.
           </p>

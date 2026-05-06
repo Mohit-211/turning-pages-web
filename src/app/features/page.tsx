@@ -13,16 +13,16 @@ import FeaturesTrust from "@/components/features/FeaturesTrust";
 import FeaturesCTA from "@/components/features/FeaturesCTA";
 
 export const metadata: Metadata = {
-  title: "Features – AI Book Writing Platform | Turning Pages",
+  title: "Features – TAV Book Writing Platform | Turning Pages",
   description:
-    "Explore powerful AI features that help you write, edit, structure, and publish your book faster. From AI writing to plagiarism checks and cover generation—everything in one place.",
+    "Explore powerful TAV features that help you write, edit, structure, and publish your book faster. From TAV writing to plagiarism checks and cover generation—everything in one place.",
   keywords: [
-    "AI writing tools",
+    "TAV writing tools",
     "book writing software",
-    "AI author platform",
+    "TAV author platform",
     "plagiarism checker",
     "grammar checker",
-    "AI content generator",
+    "TAV content generator",
     "book creation tools",
   ],
 };

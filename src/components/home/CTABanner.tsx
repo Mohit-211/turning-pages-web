@@ -29,7 +29,7 @@ export default function CTABanner() {
           {/* Subtext */}
           <p className="text-lg text-secondary-foreground/80 max-w-2xl mx-auto mb-10">
             Stop rewriting. Start finishing. Turn your manuscript into a
-            polished, publish-ready book with AI-powered tools and guided
+            polished, publish-ready book with TAV-powered tools and guided
             editing.
           </p>
 

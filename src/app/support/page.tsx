@@ -9,10 +9,10 @@ import SupportCTA from "@/components/support/SupportCTA";
 export const metadata: Metadata = {
   title: "Support – Turning Pages",
   description:
-    "Get help with Turning Pages. Contact support, explore FAQs, and find guidance on using our AI-powered book writing platform.",
+    "Get help with Turning Pages. Contact support, explore FAQs, and find guidance on using our TAV-powered book writing platform.",
   keywords: [
     "Turning Pages support",
-    "AI writing help",
+    "TAV writing help",
     "book writing support",
     "customer support",
     "FAQs",

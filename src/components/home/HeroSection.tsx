@@ -31,7 +31,7 @@ export default function HeroSection() {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent border border-secondary/20 text-secondary text-sm font-medium mb-6"
             >
               <Sparkles className="w-4 h-4" />
-              AI-Powered Book Writing Platform
+              TAV-Powered Book Writing Platform
             </motion.div>
 
             {/* Heading */}
@@ -53,7 +53,7 @@ export default function HeroSection() {
               className="text-lg text-muted-foreground leading-relaxed mb-8 max-w-xl"
             >
               Turning Pages empowers authors to write, refine, and
-              professionally edit their books using AI-assisted tools and
+              professionally edit their books using TAV-assisted tools and
               human-grade editorial workflows. From first draft to final polish.
             </motion.p>
 

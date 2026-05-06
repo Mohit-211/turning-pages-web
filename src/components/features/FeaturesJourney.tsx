@@ -10,7 +10,7 @@ const FeaturesJourney = () => {
       icon: PenLine,
       title: "Write",
       description:
-        "Start with AI-assisted drafting or upload your existing manuscript",
+        "Start with TAV-assisted drafting or upload your existing manuscript",
     },
     {
       icon: Sparkles,

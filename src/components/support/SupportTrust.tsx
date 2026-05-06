@@ -16,7 +16,7 @@ const SupportTrust = () => {
       icon: Eye,
       title: "Your Work Stays Yours",
       description:
-        "We never share, sell, or use your creative content for AI training without your explicit consent.",
+        "We never share, sell, or use your creative content for TAV training without your explicit consent.",
     },
     {
       icon: FileCheck,
